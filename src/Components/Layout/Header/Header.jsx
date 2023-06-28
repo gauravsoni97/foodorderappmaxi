@@ -19,7 +19,7 @@ const Header = () => {
           </a>
           <div className="flex md:order-2">
            <BlueButton>
-            My Cart ()
+            My Cart (32)
            </BlueButton>
           </div>
         </div>
