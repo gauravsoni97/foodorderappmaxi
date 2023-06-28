@@ -1,6 +1,6 @@
 import React from "react";
 
-const Cart = () => {
+const Cart = ({ hideCartModal }) => {
   return (
     <>
       <div
@@ -16,6 +16,8 @@ const Cart = () => {
                 Cart List
               </h3>
               <button
+
+                onClick={hideCartModal}
                 type="button"
                 class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
                 data-modal-hide="defaultModal"
@@ -40,11 +42,7 @@ const Cart = () => {
               <div className="flex items-center justify-between">
                 <div className="ItemName">Name</div>
                 <div className="ItemPrice">$213</div>
-                <div className="IncDecPrice">
-                  <button>+</button>
-                  <input type="number" />
-                  <button>-</button>
-                </div>
+            
                 <div>Del Item</div>
               </div>
             </div>
