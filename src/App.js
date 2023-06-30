@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "./Components/Layout/Header/Header";
 import Meals from "./Components/Meals/Meals";
 import Cart from "./Components/Cart/Cart";
+import CartProvider from "./store/CartProvider";
 
 const App = () => {
   const [showCart, setShowCart] = useState(false);
@@ -14,7 +15,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <CartProvider>
       {showCart ? (
         <Cart hideCartModal={hideCartModal} />
       ) : (
@@ -23,7 +24,7 @@ const App = () => {
           <Meals />
         </>
       )}
-    </div>
+    </CartProvider>
   );
 };
 
