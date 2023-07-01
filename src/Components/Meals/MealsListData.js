@@ -1,8 +1,8 @@
 export const MealsListData = [
-  { id: 1, Name: "Meal1", Price: 44 },
-  { id: 2, Name: "Meal2", Price: 42 },
-  { id: 3, Name: "Meal3", Price: 63 },
-  { id: 4, Name: "Meal4", Price: 54 },
-  { id: 5, Name: "Meal5", Price: 45 },
-  { id: 6, Name: "Meal6", Price: 32 },
+  { id: 1, name: "Meal1", amount: 1, price: 44 },
+  { id: 2, name: "Meal2", amount: 1, price: 42 },
+  { id: 3, name: "Meal3", amount: 1, price: 63 },
+  { id: 4, name: "Meal4", amount: 1, price: 54 },
+  { id: 5, name: "Meal5", amount: 1, price: 45 },
+  { id: 6, name: "Meal6", amount: 1, price: 32 },
 ];

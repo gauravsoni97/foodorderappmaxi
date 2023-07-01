@@ -3,10 +3,9 @@ import CartContext from "../../../store/CartContext";
 
 const Header = ({ showCartModal }) => {
   const cartCtx = useContext(CartContext);
-  const numOfCardItems = cartCtx.item.reduce(
-    (currentNum, item) => currentNum + item.amount,
-    0
-  );
+  console.log("Cart Ctx in header", cartCtx);
+  const numOfCardItems = cartCtx.items.reduce((a, b) => a + b.amount, 0);
+  
   return (
     <div>
       <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
