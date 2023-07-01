@@ -14,8 +14,8 @@ const Cart = ({ hideCartModal }) => {
   const onAddCardHandler = (item) => {
     cartCtx.addItem({ ...item, amount: 1 });
   };
-  const onDelCardHandler = (item) => {
-    cartCtx.addItem({ ...item, amount: 1 });
+  const onDelCardHandler = (id) => {
+    cartCtx.removeItem(id);
   };
 
   return (
