@@ -58,12 +58,10 @@ const CartProvider = ({ children }) => {
     dispatchCartAction({ type: "ADD", item: item });
   };
 
-  const removeItemFromCartHandler = (id, price, amount) => {
+  const removeItemFromCartHandler = (id) => {
     dispatchCartAction({
       type: "REMOVE",
       id: id,
-      price: price,
-      amount: amount,
     });
   };
 
